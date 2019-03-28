@@ -50,4 +50,9 @@ class User extends Authenticatable
     public function getAvatarAttribute(){
         return $this->getAvatar();
     }
+
+    public function getRouteKeyName()
+    {
+        return 'username';
+    }
 }

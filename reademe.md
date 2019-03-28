@@ -158,3 +158,7 @@
 ### controller 생성
 
     php artisan make:controller PostController
+
+### UserController 생성
+
+    php artisan make:controller UserController

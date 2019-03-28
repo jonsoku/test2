@@ -61489,8 +61489,8 @@ function (_Component) {
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "user"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-          href: "#"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, post.user.username))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, post.body)));
+          href: "/users/".concat(post.user.username)
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, post.user.username)), '', "- ", post.humanCreatedAt), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, post.body)));
       }))))));
     }
   }]);
