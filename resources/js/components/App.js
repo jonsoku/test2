@@ -26,7 +26,7 @@ class App extends Component {
             .then(response => {
                 console.log(response);
                 this.setState({
-                    posts: [response.data]
+                    posts: [...this.state.posts, response.data]
                 });
             })
             .then(
