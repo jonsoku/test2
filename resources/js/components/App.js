@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Axios from 'axios';
 
 class App extends Component {
     constructor(props) {
@@ -17,8 +18,16 @@ class App extends Component {
     }
     handleSubmit(e) {
         e.preventDefault();
+        this.postData();
         console.log(this.state.body);
     }
+
+    postData() {
+        Axios.post('/posts', {
+            body: this.state.body
+        });
+    }
+
     render() {
         return (
             <div className='container'>

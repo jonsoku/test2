@@ -135,3 +135,26 @@
 
     hasMany (User)
     belongsTo (Post)
+
+###jsx emmet
+
+    해결방법
+    아래와 같이 vscode 설정(cmd + ,)을 열어 항목을 추가하면 된다. (설정만 저장(cmd + s)하고 편집기를 재시작하지 않아도 바로 적용됨.)
+
+    "files.associations": {
+        "*.js": "javascriptreact"
+    }
+
+### 여러가지 필수요소
+
+    npm install react-router-dom && npm install axios && npm install styled-components && npm install styled-reset && npm install react-js-pagination && npm install react-player
+
+### rafc (함수형) rcc (일반)
+
+### web.php 추가
+
+    Route::post('/posts', 'PostController@create');
+
+### controller 생성
+
+    php artisan make:controller PostController
