@@ -115,3 +115,23 @@
         if (document.getElementById('root')) {
         ReactDOM.render(<App />, document.getElementById('root'));
         }
+
+### Post 모델 생성
+
+    php artisan make:model Post -m
+
+### post migration
+
+        Schema::create('posts', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->unsignedBigInteger('user_id')->index();
+            $table->string('body', 140);
+            $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+        });
+
+### Post <=> User 모델 관계맺기
+
+    hasMany (User)
+    belongsTo (Post)
