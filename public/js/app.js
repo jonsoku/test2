@@ -61476,8 +61476,21 @@ function (_Component) {
         className: "card-body"
       }, this.state.posts.map(function (post) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          key: post.id
-        }, post.body);
+          key: post.id,
+          className: "midea"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "media-left"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: post.user.avatar,
+          alt: "",
+          className: "media-object mr-2"
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "media-body"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "user"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, post.user.username))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, post.body)));
       }))))));
     }
   }]);
